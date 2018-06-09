@@ -1,0 +1,289 @@
+1528246199760	geckodriver	INFO	geckodriver 0.20.1
+1528246199766	geckodriver	INFO	Listening on 127.0.0.1:59456
+1528246199879	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--headless" "-profile" "/var/folders/g9/dh9_192n2fq3cpcwh50x9m040000gn/T/rust_mozprofile.DR9pjEm6YQNB"
+*** You are running in headless mode.
+2018-06-05 17:50:01.670 plugin-container[6569:990576] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x9f43, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1528246202074	Marionette	INFO	Listening on port 59462
+1528246202379	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-06-05 17:50:02.574 plugin-container[6570:990713] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x983f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1528246222304	geckodriver	INFO	geckodriver 0.20.1
+1528246222312	geckodriver	INFO	Listening on 127.0.0.1:59879
+1528246222419	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--headless" "-profile" "/var/folders/g9/dh9_192n2fq3cpcwh50x9m040000gn/T/rust_mozprofile.33Egm2kxQJWQ"
+*** You are running in headless mode.
+2018-06-05 17:50:24.063 plugin-container[6596:992369] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0xa03f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1528246224463	Marionette	INFO	Listening on port 59884
+2018-06-05 17:50:24.926 plugin-container[6597:992455] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x993f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1528246224943	Marionette	WARN	TLS certificate errors will be ignored for this session
+1528246256324	geckodriver	INFO	geckodriver 0.20.1
+1528246256329	geckodriver	INFO	Listening on 127.0.0.1:60659
+1528246256446	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--headless" "-profile" "/var/folders/g9/dh9_192n2fq3cpcwh50x9m040000gn/T/rust_mozprofile.38ZQHCw9hZZd"
+*** You are running in headless mode.
+2018-06-05 17:50:58.074 plugin-container[6632:995433] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0xa03f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1528246258453	Marionette	INFO	Listening on port 60679
+2018-06-05 17:50:58.943 plugin-container[6633:995522] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x9837, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1528246258978	Marionette	WARN	TLS certificate errors will be ignored for this session
+1528246288152	geckodriver	INFO	geckodriver 0.20.1
+1528246288157	geckodriver	INFO	Listening on 127.0.0.1:61510
+1528246288275	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--headless" "-profile" "/var/folders/g9/dh9_192n2fq3cpcwh50x9m040000gn/T/rust_mozprofile.wTdPqmiYS9L3"
+*** You are running in headless mode.
+2018-06-05 17:51:29.991 plugin-container[6664:998521] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0xa03f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1528246290397	Marionette	INFO	Listening on port 61522
+1528246290820	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-06-05 17:51:30.909 plugin-container[6665:998606] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x9b3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1528246304649	geckodriver	INFO	geckodriver 0.20.1
+1528246304656	geckodriver	INFO	Listening on 127.0.0.1:61972
+1528246304768	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--headless" "-profile" "/var/folders/g9/dh9_192n2fq3cpcwh50x9m040000gn/T/rust_mozprofile.RZo5qzuDOExv"
+*** You are running in headless mode.
+2018-06-05 17:51:46.481 plugin-container[6687:999612] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x9f3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1528246306883	Marionette	INFO	Listening on port 61978
+1528246307282	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-06-05 17:51:47.383 plugin-container[6688:999690] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x993f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1528246369806	geckodriver	INFO	geckodriver 0.20.1
+1528246369812	geckodriver	INFO	Listening on 127.0.0.1:63649
+1528246369923	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--headless" "-profile" "/var/folders/g9/dh9_192n2fq3cpcwh50x9m040000gn/T/rust_mozprofile.hCEMDgcU3uCM"
+*** You are running in headless mode.
+2018-06-05 17:52:51.510 plugin-container[6730:1003043] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x9f3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1528246371904	Marionette	INFO	Listening on port 63654
+1528246372428	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-06-05 17:52:52.429 plugin-container[6731:1003129] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x993f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1528246484022	geckodriver	INFO	geckodriver 0.20.1
+1528246484029	geckodriver	INFO	Listening on 127.0.0.1:65316
+1528246484142	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--headless" "-profile" "/var/folders/g9/dh9_192n2fq3cpcwh50x9m040000gn/T/rust_mozprofile.66llFb1RAdyw"
+*** You are running in headless mode.
+2018-06-05 17:54:45.876 plugin-container[6792:1010187] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x9f3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1528246486292	Marionette	INFO	Listening on port 65322
+1528246486600	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-06-05 17:54:46.776 plugin-container[6793:1010274] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x983f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1528246526741	geckodriver	INFO	geckodriver 0.20.1
+1528246526747	geckodriver	INFO	Listening on 127.0.0.1:49806
+1528246526859	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--headless" "-profile" "/var/folders/g9/dh9_192n2fq3cpcwh50x9m040000gn/T/rust_mozprofile.15PWUWmtwie1"
+*** You are running in headless mode.
+2018-06-05 17:55:28.535 plugin-container[6820:1014110] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x9f43, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1528246529026	Marionette	INFO	Listening on port 49813
+1528246529371	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-06-05 17:55:29.438 plugin-container[6821:1014199] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x983f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1528246557412	geckodriver	INFO	geckodriver 0.20.1
+1528246557419	geckodriver	INFO	Listening on 127.0.0.1:50463
+1528246557536	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--headless" "-profile" "/var/folders/g9/dh9_192n2fq3cpcwh50x9m040000gn/T/rust_mozprofile.0hiwlu1qUntm"
+*** You are running in headless mode.
+2018-06-05 17:55:59.196 plugin-container[6849:1015354] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x9f3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1528246559587	Marionette	INFO	Listening on port 50481
+2018-06-05 17:56:00.050 plugin-container[6851:1015442] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x9937, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1528246560071	Marionette	WARN	TLS certificate errors will be ignored for this session
+1528246693300	geckodriver	INFO	geckodriver 0.20.1
+1528246693306	geckodriver	INFO	Listening on 127.0.0.1:53132
+1528246693420	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--headless" "-profile" "/var/folders/g9/dh9_192n2fq3cpcwh50x9m040000gn/T/rust_mozprofile.fccNDLIdxb7N"
+*** You are running in headless mode.
+2018-06-05 17:58:15.059 plugin-container[6893:1022359] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x9f3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1528246695522	Marionette	INFO	Listening on port 53137
+1528246695954	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-06-05 17:58:15.994 plugin-container[6895:1022456] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x993f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1528246918194	geckodriver	INFO	geckodriver 0.20.1
+1528246918201	geckodriver	INFO	Listening on 127.0.0.1:57725
+1528246918358	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--headless" "-profile" "/var/folders/g9/dh9_192n2fq3cpcwh50x9m040000gn/T/rust_mozprofile.Xyi9HbzyUwR2"
+*** You are running in headless mode.
+2018-06-05 18:02:00.045 plugin-container[6976:1040683] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0xa03f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1528246920453	Marionette	INFO	Listening on port 57730
+1528246920844	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-06-05 18:02:00.890 plugin-container[6978:1040772] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x9a3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1528246950182	geckodriver	INFO	geckodriver 0.20.1
+1528246950188	geckodriver	INFO	Listening on 127.0.0.1:58253
+1528246950301	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--headless" "-profile" "/var/folders/g9/dh9_192n2fq3cpcwh50x9m040000gn/T/rust_mozprofile.Yva8gBkm7WuA"
+*** You are running in headless mode.
+2018-06-05 18:02:31.831 plugin-container[7001:1042138] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0xa03f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1528246952231	Marionette	INFO	Listening on port 58258
+2018-06-05 18:02:32.740 plugin-container[7002:1042287] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x9a37, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1528246952824	Marionette	WARN	TLS certificate errors will be ignored for this session
+1528247026417	geckodriver	INFO	geckodriver 0.20.1
+1528247026423	geckodriver	INFO	Listening on 127.0.0.1:59537
+1528247026534	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--headless" "-profile" "/var/folders/g9/dh9_192n2fq3cpcwh50x9m040000gn/T/rust_mozprofile.84Ib8T4SgT6x"
+*** You are running in headless mode.
+2018-06-05 18:03:48.109 plugin-container[7048:1047068] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0xa037, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1528247028523	Marionette	INFO	Listening on port 59545
+2018-06-05 18:03:48.991 plugin-container[7049:1047148] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x9937, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1528247028999	Marionette	WARN	TLS certificate errors will be ignored for this session
+1528247151403	geckodriver	INFO	geckodriver 0.20.1
+1528247151409	geckodriver	INFO	Listening on 127.0.0.1:61663
+1528247151539	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--headless" "-profile" "/var/folders/g9/dh9_192n2fq3cpcwh50x9m040000gn/T/rust_mozprofile.HZl4ZXomAlWR"
+*** You are running in headless mode.
+2018-06-05 18:05:53.208 plugin-container[7112:1055084] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0xa13f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1528247153609	Marionette	INFO	Listening on port 61669
+1528247153990	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-06-05 18:05:54.078 plugin-container[7113:1055175] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x983f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1]: [Tiling:Client] Failed to allocate a TextureClient
+[GFX1]: ValidateTile failed
+[GFX1]: [Tiling:Client] Failed to allocate a TextureClient
+[GFX1]: ValidateTile failed
+[GFX1]: [Tiling:Client] Failed to allocate a TextureClient
+[GFX1]: ValidateTile failed
+1528247180955	geckodriver	INFO	geckodriver 0.20.1
+1528247180961	geckodriver	INFO	Listening on 127.0.0.1:62184
+1528247181077	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--headless" "-profile" "/var/folders/g9/dh9_192n2fq3cpcwh50x9m040000gn/T/rust_mozprofile.rO4Epo7hGHPr"
+*** You are running in headless mode.
+2018-06-05 18:06:22.746 plugin-container[7140:1056837] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x9f3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1528247183168	Marionette	INFO	Listening on port 62190
+1528247183584	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-06-05 18:06:23.672 plugin-container[7141:1056931] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x983f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1528247222818	geckodriver	INFO	geckodriver 0.20.1
+1528247222824	geckodriver	INFO	Listening on 127.0.0.1:62796
+1528247222938	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--headless" "-profile" "/var/folders/g9/dh9_192n2fq3cpcwh50x9m040000gn/T/rust_mozprofile.xyeGPMxKomVF"
+*** You are running in headless mode.
+1528247225972	Marionette	INFO	Listening on port 62807
+2018-06-05 18:07:06.348 plugin-container[7168:1058731] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0xa13f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1528247226760	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-06-05 18:07:07.517 plugin-container[7170:1058950] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x9b3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1528247452702	geckodriver	INFO	geckodriver 0.20.1
+1528247452709	geckodriver	INFO	Listening on 127.0.0.1:50843
+1528247452816	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--headless" "-profile" "/var/folders/g9/dh9_192n2fq3cpcwh50x9m040000gn/T/rust_mozprofile.lyYRhfbgKnxn"
+*** You are running in headless mode.
+2018-06-05 18:10:54.439 plugin-container[7250:1071739] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0xa03f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1528247454865	Marionette	INFO	Listening on port 50848
+1528247455290	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-06-05 18:10:55.341 plugin-container[7251:1071848] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x993f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1528247465259	geckodriver	INFO	geckodriver 0.20.1
+1528247465265	geckodriver	INFO	Listening on 127.0.0.1:51173
+1528247465378	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--headless" "-profile" "/var/folders/g9/dh9_192n2fq3cpcwh50x9m040000gn/T/rust_mozprofile.mJA80QTZ8l63"
+*** You are running in headless mode.
+2018-06-05 18:11:07.040 plugin-container[7276:1073360] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0xa13f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1528247467433	Marionette	INFO	Listening on port 51180
+1528247467865	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-06-05 18:11:07.928 plugin-container[7277:1073439] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x9743, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1528505585766	geckodriver	INFO	geckodriver 0.20.1
+1528505585774	geckodriver	INFO	Listening on 127.0.0.1:65301
+1528505585891	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--headless" "-profile" "/var/folders/g9/dh9_192n2fq3cpcwh50x9m040000gn/T/rust_mozprofile.mD5PklWFGmIg"
+*** You are running in headless mode.
+2018-06-08 17:53:07.681 plugin-container[30169:6068142] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0xa03f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1528505588116	Marionette	INFO	Listening on port 65314
+1528505588431	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-06-08 17:53:08.557 plugin-container[30171:6068339] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x993f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1528505631781	geckodriver	INFO	geckodriver 0.20.1
+1528505631790	geckodriver	INFO	Listening on 127.0.0.1:50103
+1528505631910	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--headless" "-profile" "/var/folders/g9/dh9_192n2fq3cpcwh50x9m040000gn/T/rust_mozprofile.UBQE69mpUfO7"
+*** You are running in headless mode.
+2018-06-08 17:53:53.692 plugin-container[30190:6075402] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0xa03f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1528505634203	Marionette	INFO	Listening on port 50119
+1528505634536	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-06-08 17:53:54.712 plugin-container[30191:6075602] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x993f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1528505739735	geckodriver	INFO	geckodriver 0.20.1
+1528505739747	geckodriver	INFO	Listening on 127.0.0.1:55047
+1528505739890	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--headless" "-profile" "/var/folders/g9/dh9_192n2fq3cpcwh50x9m040000gn/T/rust_mozprofile.h3Rl9fMAzDQt"
+*** You are running in headless mode.
+2018-06-08 17:55:41.723 plugin-container[30428:6093747] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0xa13f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1528505742184	Marionette	INFO	Listening on port 55053
+1528505742362	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-06-08 17:55:42.691 plugin-container[30429:6093935] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x993f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1528505853937	geckodriver	INFO	geckodriver 0.20.1
+1528505853943	geckodriver	INFO	Listening on 127.0.0.1:62905
+1528505854065	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--headless" "-profile" "/var/folders/g9/dh9_192n2fq3cpcwh50x9m040000gn/T/rust_mozprofile.7kyPcxjKPH6y"
+*** You are running in headless mode.
+2018-06-08 17:57:35.961 plugin-container[30529:6111528] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0xa043, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1528505856530	Marionette	INFO	Listening on port 62921
+1528505856734	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-06-08 17:57:37.210 plugin-container[30530:6111739] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x9b3b, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1528505879791	geckodriver	INFO	geckodriver 0.20.1
+1528505879801	geckodriver	INFO	Listening on 127.0.0.1:65128
+1528505879911	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--headless" "-profile" "/var/folders/g9/dh9_192n2fq3cpcwh50x9m040000gn/T/rust_mozprofile.zZsmoHwYJ04n"
+*** You are running in headless mode.
+2018-06-08 17:58:02.098 plugin-container[30572:6114945] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0xa03f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1528505883324	Marionette	INFO	Listening on port 65137
+2018-06-08 17:58:03.544 plugin-container[30573:6115185] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x993f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1528505883939	Marionette	WARN	TLS certificate errors will be ignored for this session
+1528505960965	geckodriver	INFO	geckodriver 0.20.1
+1528505960971	geckodriver	INFO	Listening on 127.0.0.1:57597
+1528505961092	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--headless" "-profile" "/var/folders/g9/dh9_192n2fq3cpcwh50x9m040000gn/T/rust_mozprofile.VUrqZUmrRSAo"
+*** You are running in headless mode.
+2018-06-08 17:59:23.172 plugin-container[30595:6124782] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x9f43, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1528505963717	Marionette	INFO	Listening on port 57612
+1528505963790	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-06-08 17:59:24.402 plugin-container[30597:6125008] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x983f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1528505993125	geckodriver	INFO	geckodriver 0.20.1
+1528505993134	geckodriver	INFO	Listening on 127.0.0.1:60669
+1528505993269	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--headless" "-profile" "/var/folders/g9/dh9_192n2fq3cpcwh50x9m040000gn/T/rust_mozprofile.X0SDnmiIeZGi"
+*** You are running in headless mode.
+2018-06-08 17:59:56.093 plugin-container[30615:6129072] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x9f3f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1528505997516	Marionette	INFO	Listening on port 60680
+2018-06-08 17:59:57.581 plugin-container[30616:6129330] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x9743, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1528505998556	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?boro=4&houseno=60-11&street=74+STREET&go2=+GO+&requestid=0, line 24: ReferenceError: print_today is not defined
+JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?boro=4&houseno=55-09&street=SEABURY+STREET&go2=+GO+&requestid=0, line 24: ReferenceError: print_today is not defined
+JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?boro=4&houseno=87-25&street=58+AVENUE&go2=+GO+&requestid=0, line 24: ReferenceError: print_today is not defined
+JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?boro=4&houseno=87-07&street=58+AVENUE&go2=+GO+&requestid=0, line 24: ReferenceError: print_today is not defined
+JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?boro=4&houseno=87-02&street=58+AVENUE&go2=+GO+&requestid=0, line 24: ReferenceError: print_today is not defined
+JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?boro=4&houseno=52-17&street=VAN+HORN+STREET&go2=+GO+&requestid=0, line 24: ReferenceError: print_today is not defined
+JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?boro=4&houseno=86-10&street=GRAND+AVENUE&go2=+GO+&requestid=0, line 24: ReferenceError: print_today is not defined
+JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?boro=4&houseno=86-22&street=GRAND+AVENUE&go2=+GO+&requestid=0, line 24: ReferenceError: print_today is not defined
+JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?boro=4&houseno=86-28&street=GRAND+AVENUE&go2=+GO+&requestid=0, line 24: ReferenceError: print_today is not defined
+JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?boro=4&houseno=86-20&street=53+AVENUE&go2=+GO+&requestid=0, line 24: ReferenceError: print_today is not defined
+JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?boro=4&houseno=86-35&street=55+AVENUE&go2=+GO+&requestid=0, line 24: ReferenceError: print_today is not defined
+JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?boro=4&houseno=55-05&street=VAN+HORN+STREET&go2=+GO+&requestid=0, line 24: ReferenceError: print_today is not defined
+JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?boro=4&houseno=55-03&street=VAN+HORN+STREET&go2=+GO+&requestid=0, line 24: ReferenceError: print_today is not defined
+JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?boro=4&houseno=55-01&street=VAN+HORN+STREET&go2=+GO+&requestid=0, line 24: ReferenceError: print_today is not defined
+JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?boro=4&houseno=86-10&street=55+AVENUE&go2=+GO+&requestid=0, line 24: ReferenceError: print_today is not defined
+JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?boro=4&houseno=86-23&street=55+ROAD&go2=+GO+&requestid=0, line 24: ReferenceError: print_today is not defined
+JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?boro=4&houseno=86-21&street=55+ROAD&go2=+GO+&requestid=0, line 24: ReferenceError: print_today is not defined
+JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?boro=4&houseno=86-17&street=55+ROAD&go2=+GO+&requestid=0, line 24: ReferenceError: print_today is not defined
+JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?boro=4&houseno=86-13&street=55+ROAD&go2=+GO+&requestid=0, line 24: ReferenceError: print_today is not defined
+JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?boro=4&houseno=55-17&street=VAN+HORN+STREET&go2=+GO+&requestid=0, line 24: ReferenceError: print_today is not defined
+JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?boro=4&houseno=55-15&street=VAN+HORN+STREET&go2=+GO+&requestid=0, line 24: ReferenceError: print_today is not defined
+JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?boro=4&houseno=86-26&street=55+ROAD&go2=+GO+&requestid=0, line 24: ReferenceError: print_today is not defined
+JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?boro=4&houseno=85-05&street=60+AVENUE&go2=+GO+&requestid=0, line 24: ReferenceError: print_today is not defined
+JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?boro=4&houseno=85-03&street=60+AVENUE&go2=+GO+&requestid=0, line 24: ReferenceError: print_today is not defined
+JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?boro=4&houseno=85-36&street=58+AVENUE&go2=+GO+&requestid=0, line 26: ReferenceError: print_today is not defined
+JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?boro=4&houseno=85-38&street=58+AVENUE&go2=+GO+&requestid=0, line 24: ReferenceError: print_today is not defined
+JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?boro=4&houseno=85-30&street=60+AVENUE&go2=+GO+&requestid=0, line 24: ReferenceError: print_today is not defined
+JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?boro=4&houseno=85-23&street=60+ROAD&go2=+GO+&requestid=0, line 24: ReferenceError: print_today is not defined
+JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?boro=4&houseno=85-02&street=60+ROAD&go2=+GO+&requestid=0, line 24: ReferenceError: print_today is not defined

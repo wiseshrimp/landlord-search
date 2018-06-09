@@ -1,0 +1,42 @@
+{
+  "name": "landlord-lookup",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.18.0",
+    "geojson": "^0.5.0",
+    "history": "^4.7.2",
+    "json-loader": "^0.5.7",
+    "mapbox-gl": "^0.45.0",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-mapbox-gl": "^3.8.0",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.1.4",
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.3.0"
+  },
+  "scripts": {
+    "start": "concurrently \"react-scripts start\" \"nodemon server --ignore src/\"",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "seed": "python db/seed/Populator.py",
+    "geojson": "python db/seed/to_geojson.py"
+  },
+  "proxy": "http://localhost:8000",
+  "devDependencies": {
+    "bluebird": "^3.5.1",
+    "body-parser": "^1.18.3",
+    "chalk": "^2.4.1",
+    "concurrently": "^3.5.1",
+    "debug": "^3.1.0",
+    "express": "^4.16.3",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.17.5",
+    "path": "^0.12.7",
+    "pg": "^7.4.3",
+    "sequelize": "^4.37.10"
+  }
+}

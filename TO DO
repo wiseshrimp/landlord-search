@@ -1,0 +1,35 @@
+
+  TO DO!!!
+
+PYTHON
+
+1. Finish double check landlord / year built -- 
+  will be good to double check all of the data once seeding is done
+
+2. Double check for all coordinates
+
+4. Add database field to check if the landlord is on the worst landlords list according to:
+  https://advocate.nyc.gov/landlord-watchlist/worst-landlords
+
+5. Add database field to check if building is rent-stabilized (actually)
+  https://www1.nyc.gov/site/rentguidelinesboard/resources/rent-stabilized-building-lists.page#tables
+    - Includes ALL rent stabilized buildings in all five boroughs
+
+External Sources
+Small Claims Court:
+  - Taking landlord to court: https://nycourts.gov/courts/nyc/housing/pdfs/overchargerentstab.pdf
+  - Costs for taking landlord to small claims court: https://www.nycourts.gov/forms/filingfees.shtml
+  - General infomation on how to sue landlord: https://www.nycourts.gov/courts/nyc/smallclaims/startingcase.shtml#general
+  - Tips on suing landlord for repairs: https://www.lawhelpny.org/resource/taking-your-landlord-to-court#84D5A863-AD41-4A11-8C69-57E171F8843B
+
+Frontend
+  - High quality photos of buildings via Google API: https://developers.google.com/places/web-service/photos
+
+FRONTEND
+
+1. Add options to manual filter all of the data on the map
+
+
+Cleanup
+1. Delete all unused code
+2. don't send over unnecessary data

@@ -1,0 +1,30 @@
+.search-bar-container {
+  width: 200px;
+}
+
+.search-bar {
+    z-index: 1;
+    position: relative;
+    top: 0;
+    left: 0;
+    font-size: large;
+    width: 100%;
+}
+
+.landlord-option {
+  z-index: 1;
+  position: relative;
+  font-size: large;
+  font-family: sans-serif;
+  background-color: white;
+  width: 95%;
+  cursor: pointer;
+  padding: 2px;
+}
+
+.landlord-option:hover {
+  border: 2px solid pink;
+
+}
+
+/* .landlord- */

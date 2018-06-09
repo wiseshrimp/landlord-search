@@ -1,0 +1,10 @@
+.sidebar {
+  background-color: whitesmoke;
+  box-shadow: 2px 2px 2px gray;
+  height: 100vh;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 20vw;
+  z-index: 1;
+}
