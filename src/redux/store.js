@@ -3,6 +3,7 @@ import thunkMiddleware from 'redux-thunk'
 import buildingReducer from './reducers/building'
 
 const initialState = {
+  visibleBuildings: [],
   currentBuilding: null
 }
 

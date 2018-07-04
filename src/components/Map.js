@@ -1,324 +1,253 @@
-import React from 'react'
-import mapboxgl from 'mapbox-gl'
 import axios from 'axios'
-import 'mapbox-gl/dist/mapbox-gl.css'
+import mapboxgl from 'mapbox-gl'
+import React from 'react'
 import { connect } from 'react-redux'
 import ReactMapboxGl, { Layer, Feature } from 'react-mapbox-gl'
 
-import './SearchBar.css'
+import 'mapbox-gl/dist/mapbox-gl.css'
+import './Map.css'
 
-import { setCurrentBuilding } from '../redux/actions/building-actions'
-
-// import mapJson from '../mapbox/data'
-let map
-let finalJson = []
-
+import LandlordSearch from './LandlordSearch'
+import { setCurrentBuilding, setVisibleBuildings } from '../redux/actions/building-actions'
+import {MAPBOX_ACCESS_TOKEN, NULL_FEATURE } from '../misc/constants'
 
 const Mapbox = ReactMapboxGl({
-  accessToken: ACCESS_TOKEN
+  accessToken: MAPBOX_ACCESS_TOKEN
 })
 
-function normalize(string) {
-  return string.trim().toUpperCase()
-}
 
 class Map extends React.Component {
   constructor(props) {
     super(props)
 
     this.state = {
+      center: [-73.988765, 40.71295375],
       fillBuildings: [],
       dotBuildings: [],
       buildings: [],
-      landlordNameOptions: [],
-      searchedBuildings: [],
-      searchedLandlordName: null
+      zoom: 11
     }
   }
 
   componentWillMount() {
-    // axios.get('/api/buildings')
-    //   .then(res => {
-    //     this.setState({
-    //       buildings: res.data.data
-    //     })
-    //   })
-
-    axios.get('/api/buildings/dots')
-      .then(res => {
-        this.setState({
-          dotBuildings: res.data.data
+    let options = ['dots', 'fill']
+    let fillBuildings = []
+    let dotBuildings = []
+    options.forEach(option => {
+      axios.get(`/api/buildings/${option}`)
+        .then(res => {
+          if (option === options[0]) {
+            dotBuildings = res.data.data
+          } else {
+            fillBuildings = res.data.data
+          }
         })
-      })
-    
-    axios.get('/api/buildings/fill')
-      .then(res => {
-        this.setState({
-          fillBuildings: res.data.data
+      .then(() => {
+        if (dotBuildings.length && fillBuildings.length) {
+            this.setState({
+              dotBuildings,
+              fillBuildings,
+              buildings: [ // Combine to make an ~ultimate~ list 
+                ...dotBuildings,
+                ...fillBuildings
+              ]
+            })
+          }
         })
+    })
+  }
+
+  onZoom = ev => {
+    let zoom = this.mapEl.state.map.getZoom()
+    let { lng, lat } = this.mapEl.state.map.getCenter()
+    if (zoom != this.state.zoom) {
+      this.setState({
+        center: [lng, lat],
+        zoom
       })
+    }
+  }
 
-    // mapboxgl.accessToken = 'pk.eyJ1Ijoid2lzZXNocmltcCIsImEiOiJjamhtZHFkbHEzOWI1MzZvMWh2dWc0dnpwIn0.mPpRpAYssv7wcIKaAijezw'
-
-    // if (!mapboxgl.supported()) {
-    //   alert('Your browser does not support Mapbox GL')
-    // } else {
-    // this.map = map = new mapboxgl.Map({
-    //   container: 'map',
-    //   style: 'mapbox://styles/wiseshrimp/cjhtxw1jr0a442rmtcq7kulra',
-    //   center: [-73.94, 40.68],
-    //   zoom: 10
-    // })
-
-    // map.on('click', 'buildings', ev => {
-    //   let {
-    //     building_number,
-    //     complaints_link,
-    //     dob_violations_link,
-    //     ecb_violations_link,
-    //     landlord_name,
-    //     num_of_complaints,
-    //     num_of_dob_violations,
-    //     num_of_ecb_violations,
-    //     num_of_res_units,
-    //     street_name,
-    //     year_built,
-    //     zip_code
-    //   } = ev.features[0].properties
-
-    //   map.flyTo({
-    //     center: ev.lngLat
-    //   })
-
-    // this.props.setCurrentBuilding({
-    //   building_number,
-    //   complaints_link,
-    //   dob_violations_link,
-    //   ecb_violations_link,
-    //   landlord_name,
-    //   num_of_complaints,
-    //   num_of_dob_violations,
-    //   num_of_ecb_violations,
-    //   num_of_res_units,
-    //   street_name,
-    //   year_built,
-    //   zip_code
-    // })
-    // })
+  renderFillBuildingFeature = fillBuilding => {
+    if (this.state.zoom <= 13) {
+      return this.renderDotBuildingFeature(fillBuilding)
+    }
+    let coords = JSON.parse(fillBuilding.coordinates)
+    // if (!coords.length) {
+    //   return this.renderDotBuildingFeature(fillBuilding)
     // }
-  }
 
-  searchLandlord = name => {
-    let landlordNameOptions = []
-    let searchedBuildings = this.state.buildings.map(building => {
-      if (!building.landlord_name) {
-        return
-      }
-      let landlordName = normalize(building.landlord_name)
-      if (landlordName.includes(name)) {
-        if (!landlordNameOptions.includes(landlordName)) {
-          landlordNameOptions.push(landlordName)
-        }
-        return building
-      }
-    })
-    this.setState({
-      searchedBuildings,
-      landlordNameOptions
-    })
-  }
-
-  onLandlordComplete = ev => {
-    if (ev.keyCode === 13) {
-      console.log("Final Search: ", this.state.searchedLandlordName)
-    }
-  }
-
-  onLandlordInput = ev => {
-    let input = normalize(ev.target.value)
-    if (input.length > 4) {
-      this.searchLandlord(input)
-    }
-    this.setState({
-      searchedLandlordName: input
-    })
-  }
-  
-  onBuildingInput = ev => {
-    let addressArr = ev.target.value.split(' ')
-    if (addressArr.length > 1) {
-      let buildingNum = Number(addressArr[0].replace(/\D+/g, '', ''))
-      let street = addressArr[1].trim().toUpperCase()
-
-      // let buildingResults = map.setFilter('buildings', ['all', ['==', 'building_number', buildingNum]])
-      // let identifiedBuildings = map.queryRenderedFeatures('buildings')
-      // let foundBuildingsFilter = ['all']
-      // for (var i = 0; i < identifiedBuildings.length; i++) {
-      //   if (identifiedBuildings[i].layer.id != "buildings") {
-      //     continue
-      //   }
-      //   if (identifiedBuildings[i].properties["street_name"].includes(street)) {
-      //     let filter = [
-      //       "==",
-      //       "building_id", identifiedBuildings[i].properties.building_id]
-
-      //     foundBuildingsFilter.push(filter)
-      //   }
-      // }
-      // map.setFilter(f => {
-      //   console.log(f)
-      //   return true
-      // })
-    }
-  }
-
-  onLandlordClick = ev => { // Sets filter
-    // Filter by landlord
-    map.setFilter("buildings",
-      ["all", ["==", "landlord_name", ev.target.innerText]])
-  }
-
-  landlordRec = landlordName => (
-    <div
-      key={landlordName}
-      className="landlord-option"
-      onClick={this.onLandlordClick}>
-      {landlordName}
-    </div>
-  )
-
-  renderLandlordSearch = () => (
-    <div>
-      <input className="search-bar"
-        placeholder="Landlord Name"
-        onChange={this.onLandlordInput}
-        onKeyUp={this.onLandlordComplete}
-      />
-      {this.state.landlordNameOptions.length ? this.state.landlordNameOptions.map(this.landlordRec) : null}
-    </div>
-  )
-
-  renderBuildingSearch = () => (
-    <div>
-      <input className="search-bar"
-        placeholder="Address"
-        onChange={this.onBuildingInput}
-      />
-      {/* {this.state.landlordNameOptions.length ? this.state.landlordNameOptions.map(this.landlordRec) : null} */}
-    </div>
-  )
-
-  renderFillBuildingFeature = building => {
-    // if (building.coordinates == "None" || building.coordinates == null || building.coordinates == undefined) {
-    //   try {
-    //     let latitude = Number(building.latitude),
-    //       longitude = Number(building.longitude)
-    //     let coords = [
-    //       [
-    //         longitude - 0.00005,
-    //         latitude - 0.00005
-    //       ], [longitude - 0.00005, latitude + 0.00005], [longitude + 0.00005, latitude + 0.00005], [longitude + 0.00005, latitude - 0.00005]]
-
-    //     return <Feature key={building["building_id"]} coordinates={[coords]} />
-    //   } catch (err) {
-    //     console.log(err)
-    //     return <Feature key={building["building_id"]} coordinates={[[[]]]} />
-    //   }
-    // }
-    // console.log(building.coordinates)
-    let coords = JSON.parse(building.coordinates)
-    if (!coords.length) {
-
-      try {
-        let latitude = Number(building.latitude),
-          longitude = Number(building.longitude)
-        let coords = [[
-          longitude - 0.00005,
-          latitude - 0.00005
-        ], [longitude - 0.00005, latitude + 0.00005], [longitude + 0.00005, latitude + 0.00005], [longitude + 0.00005, latitude - 0.00005]]
-        return <Feature key={building["building_id"]} coordinates={[coords]} />
-      } catch (err) {
-        console.log(err)
-
-        return <Feature key={building["building_id"]} coordinates={[[[]]]} />
-      }
-    }
-      
-    //   if (coords == null || coords == undefined) {
-    //     try {
-    //       let latitude = Number(building.latitude),
-    //         longitude = Number(building.longitude)
-    //       let coords = [[
-    //         longitude - 0.00005,
-    //         latitude - 0.00005
-    //       ], [longitude - 0.00005, latitude + 0.00005], [longitude + 0.00005, latitude + 0.00005], [longitude + 0.00005, latitude - 0.00005]]
-    //       return <Feature key={building["building_id"]} coordinates={[coords]} />
-    //     } catch (err) {
-    //       console.log(err)
-    //       return <Feature key={building["building_id"]} coordinates={[[[]]]} />
-    //     }
-    //   // return <Feature key={building["building_id"]} coordinates={[[[]]]} />    }
-    // // if (typeof coords != 'object') {
-    //   // console.log(coords.length)
-        
-    // }
+    // Something is wrong!!!!!!!! Won't render – must be a problem with the coordinates
+    // What's going on during Zoom
     return (
-      // <div key={building["building_id"]}>
-      <Feature key={building["building_id"]}
+      <Feature key={`fill-${fillBuilding["building_id"]}`}
         coordinates={[coords]}
       />
-      // </div>  
     )
   }
 
-  renderDotBuildingsFeature = dotBuilding => {
+  renderDotBuildingFeature = dotBuilding => {
     switch (dotBuilding.latitude) {
       case "":
       case "None":
       case null:
       case undefined:
-        return <Feature key={dotBuilding["building_id"]} coordinates={[[[]]]} />
+        return (
+          <Feature
+            key={dotBuilding["building_id"]}
+            coordinates={[[[]]]}
+          />
+        )
       default:
-        break  
-    }  
+        break
+    }
     return (
-      <Feature key={dotBuilding["building_id"]}
-        coordinates={[dotBuilding.longitude, dotBuilding.latitude]}  />
+      <Feature
+        key={dotBuilding["building_id"]}
+        properties={{"num_of_complaints": dotBuilding.num_of_complaints}}
+        coordinates={
+          [dotBuilding.longitude, dotBuilding.latitude]
+        }
+      />
     )
-    // To do:
-    // Finish render dot building feature ==> return <Feature /> with type="symbol" or "dot"? Make sure to do long/lat check
   }
-    
-  render() {
+
+  renderAllBuildings = () => {
     return (
-      <div className="search-bar-container">
+      <div>
+        {/* {this.state.zoom <= 13 ? this.renderFillBuildings(this.state.fillBuildings, true) : this.renderFillBuildings()} */}
+        {this.renderDotBuildings(this.state.buildings)}
+      </div>
+    )
+  }
+
+  renderDotBuildings = (dotBuildings = this.state.dotBuildings) => (
+    <Layer
+      id="dot-buildings"
+      type="circle"
+      layerOptions={{
+        filter: ["has", "num_of_complaints"]
+      }}
+      paint={{
+        "circle-color": {
+          property: "num_of_complaints",
+          type: "interval",
+          stops: [[3, "#34cc52"], [6, "#ffcc00"], [10, "#ff4d4d"]]
+
+        },
+        "circle-opacity": 0.7,
+        "circle-radius": {
+          property: "num_of_complaints",
+          type: "interval",
+          stops: [[3, 3], [6, 5], [10, 7]]
+        }
+      }}
+    >
+      {dotBuildings.length ? dotBuildings.map(this.renderDotBuildingFeature) : null}
+    </Layer>  
+  )
+
+  renderFillBuildings = (fillBuildings = this.state.fillBuildings, isZoom = false) => {
+    // if (isZoom) {
+    //   return (
+    //     <Layer
+    //       id="dot-fill-buildings"
+    //       type="circle">
+    //       {fillBuildings.length ? fillBuildings.map(this.renderDotBuildingFeature) : null}
+    //     </Layer>  
+    //   )
+    // } else {
+    let paint = {"fill-color": "#ffffff", "fill-opacity": 0.8 }
+      return (
+        <Layer
+          id="fill-buildings"
+          type={isZoom ? "circle" : "fill"}
+          paint={isZoom ? {} : paint}
+          >
+          {fillBuildings.length ? fillBuildings.map(this.renderFillBuildingFeature) : null}
+        </Layer>
+      )
+    // }
+}
+
+  renderVisibleBuildings = () => {
+    // let fillBuildings = []
+    // let dotBuildings = []
+    // this.props.visibleBuildings.forEach(building => {
+    //   if (this.state.fillBuildings.includes(building)) {
+    //     fillBuildings.push(building)
+    //   } else {
+    //     dotBuildings.push(building)
+    //   }
+    let long = 0, lat = 0
+    let { visibleBuildings } = this.props
+    let num = 0
+    
+    for (var idx = 0; idx < visibleBuildings.length; idx++) {
+      if (!visibleBuildings[idx].latitude || !visibleBuildings[idx].longitude) {
+        continue
+      }
+      long += Number(visibleBuildings[idx].longitude)
+      lat += Number(visibleBuildings[idx].latitude)
+      num++
+    }
+
+    long = long / num
+    lat = lat / num
+      this.mapEl.state.map.flyTo(
+        {
+          zoom: 15,
+          center: [
+            long,
+            lat
+          ]
+        }
+      )
+    // })
+    return (
+      <div>
+        {this.renderDotBuildings(this.props.visibleBuildings)}
+        {/* {this.renderFillBuildings(fillBuildings)} */}
+      </div>
+    )
+  }
+
+  render() {
+    if (this.mapEl) {
+      global.map = this.mapEl
+    }
+    return (
+      <div>
         <Mapbox
-          style="mapbox://styles/wiseshrimp/cji5ok1q10m402rq7c36s1g6d"
-          center={[-73.94, 40.68]}
+          ref={el => this.mapEl = el}
+          style="mapbox://styles/wiseshrimp/cjhv5jyh409l62rmzwvwckjzl"
+          center={this.state.center}
           containerStyle={{
             height: '100vh',
             width: '100vw'
           }}
-        >
-          <Layer id="fill-buildings" type="fill" paint={{ "fill-color": "#ffffff", "fill-opacity": 0.8}}>  
-            {this.state.fillBuildings.length ? this.state.fillBuildings.map(this.renderFillBuildingFeature) : null}  
-          </Layer>
-
-          <Layer id="dot-buildings" type="circle">
-            {this.state.dotBuildings.length ? this.state.dotBuildings.map(this.renderDotBuildingsFeature) : null}  
-          </Layer>  
-        </Mapbox>  
-        {/* {this.renderLandlordSearch()}   */}
-        {this.renderBuildingSearch()}  
+          onZoomEnd={this.onZoom}
+        >          
+          {this.props.visibleBuildings.length ? this.renderVisibleBuildings() : this.renderAllBuildings()}  
+        </Mapbox>
+        <LandlordSearch
+          buildings={this.state.buildings}
+          setCurrentBuilding={this.props.setCurrentBuilding}
+          setVisibleBuildings={this.props.setVisibleBuildings}
+        />
       </div>
     )
   }
 }
 
 const MapWithData = connect(
-  null,
+  state => ({
+    currentBuilding: state.currentBuilding,
+    visibleBuildings: state.visibleBuildings
+  }),
   dispatch => ({
-    setCurrentBuilding: currentBuilding => dispatch(setCurrentBuilding(currentBuilding))
+    setCurrentBuilding: currentBuilding => dispatch(setCurrentBuilding(currentBuilding)),
+    setVisibleBuildings: visibleBuildingsArr => dispatch(setVisibleBuildings(visibleBuildingsArr))
   })
 )(Map)
 

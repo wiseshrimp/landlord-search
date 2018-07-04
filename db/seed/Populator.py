@@ -18,7 +18,7 @@ from constants import *
 from pg import *
 
 # Stopped around 6200 but overwrote landlord info with no landlords
-START_IDX = 9018
+START_IDX = 11000 # stopped somewhere here??
 
 class Populator:
   def __init__(self, snapshot_id, is_db_set, is_replacing_duplicates, idx = START_IDX):

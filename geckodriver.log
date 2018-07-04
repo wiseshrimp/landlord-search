@@ -2716,3 +2716,55 @@ JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServl
 JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?boro=5&houseno=93&street=ALEXANDER+AVENUE&go2=+GO+&requestid=0, line 24: ReferenceError: print_today is not defined
 JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?boro=5&houseno=83&street=ALEXANDER+AVENUE&go2=+GO+&requestid=0, line 24: ReferenceError: print_today is not defined
 JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?boro=5&houseno=9&street=KENMORE+STREET&go2=+GO+&requestid=0, line 24: ReferenceError: print_today is not defined
+JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?boro=5&houseno=57&street=SUNFIELD+AVENUE&go2=+GO+&requestid=0, line 24: ReferenceError: print_today is not defined
+JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?boro=5&houseno=9&street=BERRY+AVENUE+WEST&go2=+GO+&requestid=0, line 24: ReferenceError: print_today is not defined
+JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?boro=5&houseno=88&street=KENMORE+STREET&go2=+GO+&requestid=0, line 24: ReferenceError: print_today is not defined
+JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?boro=5&houseno=106&street=KENMORE+STREET&go2=+GO+&requestid=0, line 24: ReferenceError: print_today is not defined
+JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?boro=5&houseno=108&street=KENMORE+STREET&go2=+GO+&requestid=0, line 24: ReferenceError: print_today is not defined
+JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?boro=5&houseno=112&street=KENMORE+STREET&go2=+GO+&requestid=0, line 24: ReferenceError: print_today is not defined
+JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?boro=5&houseno=114&street=KENMORE+STREET&go2=+GO+&requestid=0, line 24: ReferenceError: print_today is not defined
+JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?boro=5&houseno=57&street=DIERAUF+STREET&go2=+GO+&requestid=0, line 24: ReferenceError: print_today is not defined
+JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?boro=5&houseno=88&street=TYNAN+STREET&go2=+GO+&requestid=0, line 24: ReferenceError: print_today is not defined
+JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?boro=5&houseno=91&street=BOYLAN+STREET&go2=+GO+&requestid=0, line 24: ReferenceError: print_today is not defined
+JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?boro=5&houseno=73&street=BOYLAN+STREET&go2=+GO+&requestid=0, line 24: ReferenceError: print_today is not defined
+JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?boro=5&houseno=67&street=BOYLAN+STREET&go2=+GO+&requestid=0, line 24: ReferenceError: print_today is not defined
+JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?boro=5&houseno=36&street=WOODROW+ROAD&go2=+GO+&requestid=0, line 24: ReferenceError: print_today is not defined
+JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?boro=5&houseno=10&street=WOODROW+ROAD&go2=+GO+&requestid=0, line 24: ReferenceError: print_today is not defined
+JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?boro=5&houseno=1198&street=ARTHUR+KILL+ROAD&go2=+GO+&requestid=0, line 24: ReferenceError: print_today is not defined
+JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?boro=5&houseno=1166&street=ARTHUR+KILL+ROAD&go2=+GO+&requestid=0, line 24: ReferenceError: print_today is not defined
+JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?boro=5&houseno=1134&street=ARTHUR+KILL+ROAD&go2=+GO+&requestid=0, line 24: ReferenceError: print_today is not defined
+JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?boro=5&houseno=24&street=DON+COURT&go2=+GO+&requestid=0, line 24: ReferenceError: print_today is not defined
+JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?boro=5&houseno=23&street=DON+COURT&go2=+GO+&requestid=0, line 24: ReferenceError: print_today is not defined
+JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?boro=5&houseno=22&street=DON+COURT&go2=+GO+&requestid=0, line 24: ReferenceError: print_today is not defined
+JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?boro=5&houseno=21&street=DON+COURT&go2=+GO+&requestid=0, line 24: ReferenceError: print_today is not defined
+JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?boro=5&houseno=15&street=DON+COURT&go2=+GO+&requestid=0, line 24: ReferenceError: print_today is not defined
+JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?boro=5&houseno=16&street=ANNADALE+ROAD&go2=+GO+&requestid=0, line 24: ReferenceError: print_today is not defined
+JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?boro=5&houseno=28&street=ANNADALE+ROAD&go2=+GO+&requestid=0, line 26: ReferenceError: print_today is not defined
+JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?boro=5&houseno=36&street=ANNADALE+ROAD&go2=+GO+&requestid=0, line 24: ReferenceError: print_today is not defined
+JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?boro=5&houseno=21&street=TYNAN+STREET&go2=+GO+&requestid=0, line 24: ReferenceError: print_today is not defined
+JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?boro=5&houseno=31&street=TYNAN+STREET&go2=+GO+&requestid=0, line 24: ReferenceError: print_today is not defined
+JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?boro=5&houseno=35&street=TYNAN+STREET&go2=+GO+&requestid=0, line 24: ReferenceError: print_today is not defined
+JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?boro=5&houseno=39&street=TYNAN+STREET&go2=+GO+&requestid=0, line 24: ReferenceError: print_today is not defined
+JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?boro=5&houseno=47&street=TYNAN+STREET&go2=+GO+&requestid=0, line 24: ReferenceError: print_today is not defined
+JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?boro=5&houseno=53&street=TYNAN+STREET&go2=+GO+&requestid=0, line 24: ReferenceError: print_today is not defined
+JavaScript error: http://a810-bisweb.nyc.gov/bisweb/PropertyProfileOverviewServlet?boro=5&houseno=57&street=TYNAN+STREET&go2=+GO+&requestid=0, line 24: ReferenceError: print_today is not defined
+1528524076598	geckodriver	INFO	geckodriver 0.20.1
+1528524076617	geckodriver	INFO	Listening on 127.0.0.1:64874
+1528524076721	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--headless" "-profile" "/var/folders/g9/dh9_192n2fq3cpcwh50x9m040000gn/T/rust_mozprofile.Er3eXvC1voFC"
+*** You are running in headless mode.
+2018-06-08 23:01:20.207 plugin-container[38474:7020289] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0xa23f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1528524080683	Marionette	INFO	Listening on port 64879
+2018-06-08 23:01:21.277 plugin-container[38475:7020393] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x970b, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1528524081668	Marionette	WARN	TLS certificate errors will be ignored for this session
+1528524154909	geckodriver	INFO	geckodriver 0.20.1
+1528524154934	geckodriver	INFO	Listening on 127.0.0.1:64951
+1528524155036	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--headless" "-profile" "/var/folders/g9/dh9_192n2fq3cpcwh50x9m040000gn/T/rust_mozprofile.goXQKGi3AwT3"
+*** You are running in headless mode.
+2018-06-08 23:02:42.749 plugin-container[38573:7025863] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0xa23f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-06-08 23:02:44.653 plugin-container[38575:7026115] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x983f, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1528524165029	Marionette	INFO	Listening on port 64956
+1528524166053	Marionette	WARN	TLS certificate errors will be ignored for this session

@@ -15,7 +15,15 @@
 .env.development.local
 .env.test.local
 .env.production.local
+.pyc
 
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+geckodriver.log
+package-lock.json
+buildings.geojson
+db/seed/constants.py
+db/seed/geckdoriver.log
+db/seed/data.csv

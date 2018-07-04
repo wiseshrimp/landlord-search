@@ -17,8 +17,7 @@ from driver import *
 from constants import *
 from pg import *
 
-# Stopped around 6200 but overwrote landlord info with no landlords
-START_IDX = 30000
+START_IDX = 31000 # stopped somewhere around this??
 
 
 class Populator:

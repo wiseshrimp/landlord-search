@@ -4,6 +4,8 @@ import { connect } from 'react-redux'
 
 import Map from './components/Map'
 import SideBar from './components/SideBar'
+import SearchBar from './components/SearchBar'
+
 
 class App extends Component {
   render() {
@@ -11,6 +13,7 @@ class App extends Component {
       <div className="App">
         {this.props.currentBuilding ? <SideBar {...{currentBuilding: this.props.currentBuilding}}/> : null}  
         <Map />  
+        <SearchBar />
       </div>
     )
   }

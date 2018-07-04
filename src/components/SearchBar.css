@@ -1,14 +1,23 @@
-.search-bar-container {
+/* .search-bar-container {
   width: 200px;
 }
 
 .search-bar {
     z-index: 1;
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
     font-size: large;
-    width: 100%;
+    width: 40%;
+} */
+
+.building-search {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: large;
+    width: 40%;
 }
 
 .landlord-option {

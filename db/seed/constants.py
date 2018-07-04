@@ -118,7 +118,7 @@ CREATE_BUILDINGS_QUERY = """
     CREATE TABLE buildings 
         (
             building_id integer, 
-            building_number integer, 
+            building_number varchar, 
             street_name varchar, 
             zip_code varchar, 
             borough varchar, 
