@@ -27,3 +27,4 @@ buildings.geojson
 db/seed/constants.py
 db/seed/geckdoriver.log
 db/seed/data.csv
+src/misc/constants.js
